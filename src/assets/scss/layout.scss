@@ -1,0 +1,85 @@
+.ant-tabs-nav {
+  margin: 0 !important;
+}
+
+.search-input {
+  border-radius: 15px !important;
+  padding: 4px 20px 4px 16px !important;
+  height: 40px;
+  max-width: 300px;
+}
+
+.ant-layout-sider {
+  background: white !important;
+  position: absolute !important;
+  z-index: 200;
+  left: 0;
+  top: 69px;
+  min-height: calc(100vh - 69px);
+  @media (min-width: 1064px) {
+    position: relative !important;
+  }
+}
+
+.nav-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  //display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.4rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  background-color: #eee;
+}
+
+.dark {
+  .nav-icon:hover {
+    background-color: #4b4949;
+  }
+}
+
+.sidebar-layer {
+  background: rgba(11, 11, 11, 0.83);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all .2s ease-out;
+
+  &.closed {
+    left: -100%;
+  }
+}
+
+.rightSideBar {
+  .ant-popover-inner {
+    padding: 0 !important;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  button svg {
+    width: 24px;
+  }
+
+  button:hover {
+    background: theme('colors.neutral.100');
+  }
+}
+
+.dark {
+  .rightSideBar {
+    button:hover {
+      background: theme('colors.neutral.900');
+    }
+  }
+}
